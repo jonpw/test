@@ -2,7 +2,7 @@ pipeline {
     agent none
     stages {
         stage('Back-end') {
-            agent { dockerfile True }
+            agent { dockerfile true }
             steps {
                 checkout scm
                 sh 'cat README.md'
