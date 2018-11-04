@@ -12,7 +12,6 @@ pipeline {
         stage('Front-end') {
             agent {
                 docker { image 'debian/latest' }
-            }
             steps {
                 sh 'cat LICENSE'
             }
